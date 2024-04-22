@@ -62,9 +62,11 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "minimatch": "^3.1.2",
+    "mocha": "^10.4.0",
     "mongodb": "^6.5.0",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
+    "node-fetch": "^2.6.1",
     "nodemon": "^3.1.0",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
@@ -79,6 +81,7 @@
     "range-parser": "^1.2.1",
     "raw-body": "^2.5.2",
     "readdirp": "^3.6.0",
+    "request": "^2.88.2",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
     "semver": "^7.6.0",
@@ -101,9 +104,12 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --timeout 10000",
     "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
 }
