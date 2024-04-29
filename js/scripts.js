@@ -25,9 +25,8 @@ function submitForm() {
 
 function getCats() {
   $.get('cat', (response) => {
-      console.log(response);
       if (response) {
-          addCards(response);
+          addCards(response.result);
       }
   })
 }
